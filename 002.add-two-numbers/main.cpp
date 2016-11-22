@@ -3,6 +3,7 @@
 #include "list_node.h"
 #include "solution.h"
 
+
 int main(int argc, char *argv[]) {
     ListNode *l3 = new ListNode(3);
     ListNode *l2 = new ListNode(4);
@@ -23,14 +24,22 @@ int main(int argc, char *argv[]) {
         std::cout << result->val << ", ";
         ListNode *tmp = result;
         result = result->next;
-        delete tmp;
     }
     std::cout << std::endl;
 
-    delete l3;
-    delete l2;
-    delete l1;
-    delete r3;
-    delete r2;
-    delete r1;
+    std::function<int(ListNode *node)> listDelete;
+    listDelete = [&listDelete](ListNode *node) -> int {
+        if (node == nullptr) {
+            return 0;
+        }
+        listDelete(node->next);
+        delete node;
+        return 0;
+    };
+
+    listDelete(l1);
+    listDelete(r1);
+    listDelete(result);
+
+    return 0;
 }
