@@ -1,6 +1,5 @@
 #include <iostream>
 
-int main()
-{
-    std::cout << "dd";
+int main(int argc, char *argv[]) {
+    std::cout << "dd" << std::endl;
 }

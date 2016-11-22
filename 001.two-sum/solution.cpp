@@ -1,10 +1,8 @@
-//
-// Created by steven on 16/11/21.
-//
-
 #include "solution.h"
-#include <iostream>
+
 #include <assert.h>
+
+#include <iostream>
 #include <unordered_map>
 
 std::vector<int> Solution::twoSum(std::vector<int> &nums, int target) {

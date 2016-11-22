@@ -1,5 +1,5 @@
-#ifndef LEETCODE_001_SOLUTION_H
-#define LEETCODE_001_SOLUTION_H
+#ifndef LEETCODE_001_SOLUTION_H_
+#define LEETCODE_001_SOLUTION_H_
 
 #include <vector>
 
@@ -9,4 +9,4 @@ public:
 };
 
 
-#endif //LEETCODE_001_SOLUTION_H
+#endif //LEETCODE_001_SOLUTION_H_
