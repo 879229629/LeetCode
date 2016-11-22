@@ -6,7 +6,6 @@ struct ListNode {
     ListNode *next;
 
     ListNode(int x) : val(x), next(nullptr) {};
-
 };
 
 #endif // LEETCODE_002_LIST_NODE_H_
