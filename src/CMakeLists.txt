@@ -7,3 +7,6 @@ add_subdirectory(002.add-two-numbers)
 add_subdirectory(003.longest-substring-without-repeating-characters)
 
 add_subdirectory(004.median-of-two-sorted-arrays)
+
+
+add_subdirectory(template)
