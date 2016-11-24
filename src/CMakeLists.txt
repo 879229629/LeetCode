@@ -10,4 +10,6 @@ add_subdirectory(004.median-of-two-sorted-arrays)
 
 add_subdirectory(005.longest-palindromic-substring)
 
+add_subdirectory(006.zigzag-conversion)
+
 add_subdirectory(template)
