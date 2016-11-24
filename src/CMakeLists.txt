@@ -8,5 +8,6 @@ add_subdirectory(003.longest-substring-without-repeating-characters)
 
 add_subdirectory(004.median-of-two-sorted-arrays)
 
+add_subdirectory(005.longest-palindromic-substring)
 
 add_subdirectory(template)
