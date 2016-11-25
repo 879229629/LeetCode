@@ -4,8 +4,7 @@
 
 int main(int argc, char *argv[]) {
     solution s;
-    std::string str = "-123";
+    std::string str = "-1";
     int ret = s.myAtoi(str);
-    std::cout << "str: [" << str << "][" << ret << "]" << std::endl;
-    std::cout << atoi("2147483648");
+    std::cout << "str: [" << str << "][" << ret << "][" << atoi(str.c_str()) << "]" << std::endl;
 }
