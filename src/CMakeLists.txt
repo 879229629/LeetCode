@@ -12,4 +12,6 @@ add_subdirectory(005.longest-palindromic-substring)
 
 add_subdirectory(006.zigzag-conversion)
 
+add_subdirectory(007.reverse-integer)
+
 add_subdirectory(template)
