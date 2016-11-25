@@ -3,7 +3,7 @@
 
 
 class solution {
-
+public:
 };
 
 

@@ -16,4 +16,6 @@ add_subdirectory(007.reverse-integer)
 
 add_subdirectory(008.string-to-integer-atoi)
 
+add_subdirectory(009.palindrome-number)
+
 add_subdirectory(template)
