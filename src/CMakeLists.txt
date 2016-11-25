@@ -14,4 +14,6 @@ add_subdirectory(006.zigzag-conversion)
 
 add_subdirectory(007.reverse-integer)
 
+add_subdirectory(008.string-to-integer-atoi)
+
 add_subdirectory(template)
