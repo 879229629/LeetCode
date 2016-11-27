@@ -24,4 +24,6 @@ add_subdirectory(011.container-with-most-water)
 
 add_subdirectory(012.integer-to-roman)
 
+add_subdirectory(013.roman-to-integer)
+
 add_subdirectory(template)
