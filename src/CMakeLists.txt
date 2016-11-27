@@ -22,4 +22,6 @@ add_subdirectory(010.regular-expression-matching)
 
 add_subdirectory(011.container-with-most-water)
 
+add_subdirectory(012.integer-to-roman)
+
 add_subdirectory(template)
