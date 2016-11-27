@@ -20,4 +20,6 @@ add_subdirectory(009.palindrome-number)
 
 add_subdirectory(010.regular-expression-matching)
 
+add_subdirectory(011.container-with-most-water)
+
 add_subdirectory(template)
