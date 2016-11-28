@@ -26,4 +26,8 @@ add_subdirectory(012.integer-to-roman)
 
 add_subdirectory(013.roman-to-integer)
 
+add_subdirectory(014.longest-common-prefix)
+
+add_subdirectory(015.3sum)
+
 add_subdirectory(template)
