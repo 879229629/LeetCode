@@ -30,4 +30,6 @@ add_subdirectory(014.longest-common-prefix)
 
 add_subdirectory(015.3sum)
 
+add_subdirectory(016.3sum-closest)
+
 add_subdirectory(template)
