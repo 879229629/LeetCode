@@ -350,7 +350,27 @@
 
 #### 174. [dungeon-game](https://leetcode.com/problems/dungeon-game)
 
+#### 175. [combine-two-tables](https://leetcode.com/problems/combine-two-tables)
+
+#### 176. [second-highest-salary](https://leetcode.com/problems/second-highest-salary)
+
+#### 177. [nth-highest-salary](https://leetcode.com/problems/nth-highest-salary)
+
+#### 178. [rank-scores](https://leetcode.com/problems/rank-scores)
+
 #### 179. [largest-number](https://leetcode.com/problems/largest-number)
+
+#### 180. [consecutive-numbers](https://leetcode.com/problems/consecutive-numbers)
+
+#### 181. [employees-earning-more-than-their-managers](https://leetcode.com/problems/employees-earning-more-than-their-managers)
+
+#### 182. [duplicate-emails](https://leetcode.com/problems/duplicate-emails)
+
+#### 183. [customers-who-never-order](https://leetcode.com/problems/customers-who-never-order)
+
+#### 184. [department-highest-salary](https://leetcode.com/problems/department-highest-salary)
+
+#### 185. [department-top-three-salaries](https://leetcode.com/problems/department-top-three-salaries)
 
 #### 186. [reverse-words-in-a-string-ii](https://leetcode.com/problems/reverse-words-in-a-string-ii)
 
@@ -363,6 +383,18 @@
 #### 190. [reverse-bits](https://leetcode.com/problems/reverse-bits)
 
 #### 191. [number-of-1-bits](https://leetcode.com/problems/number-of-1-bits)
+
+#### 192. [word-frequency](https://leetcode.com/problems/word-frequency)
+
+#### 193. [valid-phone-numbers](https://leetcode.com/problems/valid-phone-numbers)
+
+#### 194. [transpose-file](https://leetcode.com/problems/transpose-file)
+
+#### 195. [tenth-line](https://leetcode.com/problems/tenth-line)
+
+#### 196. [delete-duplicate-emails](https://leetcode.com/problems/delete-duplicate-emails)
+
+#### 197. [rising-temperature](https://leetcode.com/problems/rising-temperature)
 
 #### 198. [house-robber](https://leetcode.com/problems/house-robber)
 
@@ -491,6 +523,8 @@
 #### 260. [single-number-iii](https://leetcode.com/problems/single-number-iii)
 
 #### 261. [graph-valid-tree](https://leetcode.com/problems/graph-valid-tree)
+
+#### 262. [trips-and-users](https://leetcode.com/problems/trips-and-users)
 
 #### 263. [ugly-number](https://leetcode.com/problems/ugly-number)
 
@@ -820,6 +854,8 @@
 
 #### 432. [all-oone-data-structure](https://leetcode.com/problems/all-oone-data-structure)
 
+#### 433. [minimum-genetic-mutation](https://leetcode.com/problems/minimum-genetic-mutation)
+
 #### 435. [non-overlapping-intervals](https://leetcode.com/problems/non-overlapping-intervals)
 
 #### 436. [find-right-interval](https://leetcode.com/problems/find-right-interval)
@@ -834,11 +870,23 @@
 
 #### 441. [arranging-coins](https://leetcode.com/problems/arranging-coins)
 
+#### 442. [find-all-duplicates-in-an-array](https://leetcode.com/problems/find-all-duplicates-in-an-array)
+
 #### 444. [sequence-reconstruction](https://leetcode.com/problems/sequence-reconstruction)
+
+#### 445. [add-two-numbers-ii](https://leetcode.com/problems/add-two-numbers-ii)
 
 #### 446. [arithmetic-slices-ii-subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence)
 
 #### 447. [number-of-boomerangs](https://leetcode.com/problems/number-of-boomerangs)
+
+#### 448. [find-all-numbers-disappeared-in-an-array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array)
+
+#### 449. [serialize-and-deserialize-bst](https://leetcode.com/problems/serialize-and-deserialize-bst)
+
+#### 450. [delete-node-in-a-bst](https://leetcode.com/problems/delete-node-in-a-bst)
+
+#### 451. [sort-characters-by-frequency](https://leetcode.com/problems/sort-characters-by-frequency)
 
 #### 452. [minimum-number-of-arrows-to-burst-balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)
 
@@ -850,7 +898,13 @@
 
 #### 456. [132-pattern](https://leetcode.com/problems/132-pattern)
 
+#### 457. [circular-array-loop](https://leetcode.com/problems/circular-array-loop)
+
+#### 458. [poor-pigs](https://leetcode.com/problems/poor-pigs)
+
 #### 459. [repeated-substring-pattern](https://leetcode.com/problems/repeated-substring-pattern)
+
+#### 460. [lfu-cache](https://leetcode.com/problems/lfu-cache)
 
 #### 462. [minimum-moves-to-equal-array-elements-ii](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii)
 

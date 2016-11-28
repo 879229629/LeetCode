@@ -34,4 +34,6 @@ add_subdirectory(016.3sum-closest)
 
 add_subdirectory(017.letter-combinations-of-a-phone-number)
 
+add_subdirectory(018.4sum)
+
 add_subdirectory(template)
