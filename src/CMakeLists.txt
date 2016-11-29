@@ -36,4 +36,6 @@ add_subdirectory(017.letter-combinations-of-a-phone-number)
 
 add_subdirectory(018.4sum)
 
+add_subdirectory(019.remove-nth-node-from-end-of-list)
+
 add_subdirectory(template)
