@@ -38,4 +38,6 @@ add_subdirectory(018.4sum)
 
 add_subdirectory(019.remove-nth-node-from-end-of-list)
 
+add_subdirectory(020.valid-parentheses)
+
 add_subdirectory(template)
