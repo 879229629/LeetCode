@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
     }
     std::cout << std::endl;
 
-    int target = 2;
+    int target = 4;
     ListNode *newNode = s.removeNthFromEnd(node1, target);
     while (newNode) {
         std::cout << ", " << newNode->val;
