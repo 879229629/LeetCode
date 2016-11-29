@@ -40,4 +40,6 @@ add_subdirectory(019.remove-nth-node-from-end-of-list)
 
 add_subdirectory(020.valid-parentheses)
 
+add_subdirectory(021.merge-two-sorted-lists)
+
 add_subdirectory(template)
