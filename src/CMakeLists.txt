@@ -42,4 +42,6 @@ add_subdirectory(020.valid-parentheses)
 
 add_subdirectory(021.merge-two-sorted-lists)
 
+add_subdirectory(022.generate-parentheses)
+
 add_subdirectory(template)
