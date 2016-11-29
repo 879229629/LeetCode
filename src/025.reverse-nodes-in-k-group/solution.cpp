@@ -1,15 +1,17 @@
 #include "solution.h"
 
+#include <iostream>
 
 ListNode *solution::reverseKGroup(ListNode *head, int k) {
     if (!head || !head->next || k < 1) return head;
 
     ListNode *l = head;
-    int i = 0;
-    while (i++ < k - 1 && l->next) {
+    int i = 1;
+    while (i < k && l) {
+        ++i;
         l = l->next;
     }
-    if (i < k) return head;
+    if (i < k || !l) return head;
 
     ListNode *newBegin = l->next;
     l->next = nullptr;
