@@ -18,13 +18,9 @@ std::vector<std::vector<int>> solution::fourSum(std::vector<int> &nums, int targ
             if (nums[i] + nums[j] + nums[length - 2] + nums[length - 1] < target) continue;
 
             int k = j + 1;
-            int m = nums.size() - 1;
-
-
+            int m = length - 1;
             int target2 = target - nums[i] - nums[j];
             while (k < m) {
-                std::cout << k << ", " << m << std::endl;
-
                 int sum2 = nums[k] + nums[m];
                 if (sum2 < target2) {
                     ++k;
