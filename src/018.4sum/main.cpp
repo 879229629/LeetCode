@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
     solution s;
-    std::vector<int> input = {0, 0, 0, 0};
+    std::vector<int> input = {-3, -2, -1, 0, 0, 1, 2, 3};
     int target = 0;
     auto result = s.fourSum(input, target);
     for (int i = 0; i < result.size(); ++i) {
