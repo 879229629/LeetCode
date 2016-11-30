@@ -52,4 +52,6 @@ add_subdirectory(024.swap-nodes-in-pairs)
 
 add_subdirectory(025.reverse-nodes-in-k-group)
 
+add_subdirectory(026.remove-duplicates-from-sorted-array)
+
 add_subdirectory(template)
