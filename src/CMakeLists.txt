@@ -58,4 +58,6 @@ add_subdirectory(027.remove-element)
 
 add_subdirectory(028.implement-strstr)
 
+add_subdirectory(029.divide-two-integers)
+
 add_subdirectory(template)
