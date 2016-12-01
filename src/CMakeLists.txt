@@ -64,4 +64,6 @@ add_subdirectory(030.substring-with-concatenation-of-all-words)
 
 add_subdirectory(032.longest-valid-parentheses)
 
+add_subdirectory(033.search-in-rotated-sorted-array)
+
 add_subdirectory(template)
