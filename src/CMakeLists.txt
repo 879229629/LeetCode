@@ -60,4 +60,6 @@ add_subdirectory(028.implement-strstr)
 
 add_subdirectory(029.divide-two-integers)
 
+add_subdirectory(030.substring-with-concatenation-of-all-words)
+
 add_subdirectory(template)
