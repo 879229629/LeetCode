@@ -68,4 +68,6 @@ add_subdirectory(032.longest-valid-parentheses)
 
 add_subdirectory(033.search-in-rotated-sorted-array)
 
+add_subdirectory(034.search-for-a-range)
+
 add_subdirectory(template)
