@@ -62,6 +62,8 @@ add_subdirectory(029.divide-two-integers)
 
 add_subdirectory(030.substring-with-concatenation-of-all-words)
 
+add_subdirectory(031.next-permutation)
+
 add_subdirectory(032.longest-valid-parentheses)
 
 add_subdirectory(033.search-in-rotated-sorted-array)
