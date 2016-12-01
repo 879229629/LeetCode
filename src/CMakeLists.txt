@@ -70,4 +70,6 @@ add_subdirectory(033.search-in-rotated-sorted-array)
 
 add_subdirectory(034.search-for-a-range)
 
+add_subdirectory(035.search-insert-position)
+
 add_subdirectory(template)
