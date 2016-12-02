@@ -72,4 +72,6 @@ add_subdirectory(034.search-for-a-range)
 
 add_subdirectory(035.search-insert-position)
 
+add_subdirectory(036.valid-sudoku)
+
 add_subdirectory(template)
