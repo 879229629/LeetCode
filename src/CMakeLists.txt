@@ -78,4 +78,6 @@ add_subdirectory(037.sudoku-solver)
 
 add_subdirectory(038.count-and-say)
 
+add_subdirectory(039.combination-sum)
+
 add_subdirectory(template)
