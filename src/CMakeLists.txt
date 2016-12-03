@@ -76,4 +76,6 @@ add_subdirectory(036.valid-sudoku)
 
 add_subdirectory(037.sudoku-solver)
 
+add_subdirectory(038.count-and-say)
+
 add_subdirectory(template)
