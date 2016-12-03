@@ -74,4 +74,6 @@ add_subdirectory(035.search-insert-position)
 
 add_subdirectory(036.valid-sudoku)
 
+add_subdirectory(037.sudoku-solver)
+
 add_subdirectory(template)
