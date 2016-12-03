@@ -80,4 +80,6 @@ add_subdirectory(038.count-and-say)
 
 add_subdirectory(039.combination-sum)
 
+add_subdirectory(040.combination-sum-ii)
+
 add_subdirectory(template)

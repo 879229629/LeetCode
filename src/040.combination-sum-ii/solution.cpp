@@ -2,8 +2,7 @@
 
 #include <cassert>
 
-
-std::vector<std::vector<int>> solution::combinationSum(std::vector<int> &candidates, int target) {
+std::vector<std::vector<int>> solution::combinationSum2(std::vector<int> &candidates, int target) {
     if (candidates.empty() || target < 1) return {};
     std::sort(candidates.begin(), candidates.end());
     assert(candidates[0] > 0);
@@ -25,9 +24,11 @@ void solution::combinationSum(std::vector<int> &candidates,
     }
 
     for (int i = begin; i < candidates.size() && candidates[i] <= target; ++i) {
-        combination.push_back(candidates[i]);
-        combinationSum(candidates, target - candidates[i], res, combination, i);
-        combination.pop_back();
+        if(i==begin|| candidates[i]!=candidates[i-1]) {
+            combination.push_back(candidates[i]);
+            combinationSum(candidates, target - candidates[i], res, combination, i + 1);
+            combination.pop_back();
+        }
     }
 
     return;
