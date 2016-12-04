@@ -90,4 +90,6 @@ add_subdirectory(043.multiply-strings)
 
 add_subdirectory(044.wildcard-matching)
 
+add_subdirectory(045.jump-game-ii)
+
 add_subdirectory(template)
