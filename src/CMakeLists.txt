@@ -96,4 +96,6 @@ add_subdirectory(046.permutations)
 
 add_subdirectory(047.permutations-ii)
 
+add_subdirectory(048.rotate-image)
+
 add_subdirectory(template)
