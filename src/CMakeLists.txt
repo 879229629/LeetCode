@@ -98,4 +98,6 @@ add_subdirectory(047.permutations-ii)
 
 add_subdirectory(048.rotate-image)
 
+add_subdirectory(049.anagrams)
+
 add_subdirectory(template)
