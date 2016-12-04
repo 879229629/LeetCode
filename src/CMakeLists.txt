@@ -94,4 +94,6 @@ add_subdirectory(045.jump-game-ii)
 
 add_subdirectory(046.permutations)
 
+add_subdirectory(047.permutations-ii)
+
 add_subdirectory(template)
