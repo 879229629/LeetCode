@@ -86,4 +86,6 @@ add_subdirectory(041.first-missing-positive)
 
 add_subdirectory(042.trapping-rain-water)
 
+add_subdirectory(043.multiply-strings)
+
 add_subdirectory(template)
