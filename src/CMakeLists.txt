@@ -106,4 +106,6 @@ add_subdirectory(051.n-queens)
 
 add_subdirectory(052.n-queens-ii)
 
+add_subdirectory(053.maximum-subarray)
+
 add_subdirectory(template)
