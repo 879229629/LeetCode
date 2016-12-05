@@ -104,4 +104,6 @@ add_subdirectory(050.powx-n)
 
 add_subdirectory(051.n-queens)
 
+add_subdirectory(052.n-queens-ii)
+
 add_subdirectory(template)
