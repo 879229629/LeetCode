@@ -102,4 +102,6 @@ add_subdirectory(049.anagrams)
 
 add_subdirectory(050.powx-n)
 
+add_subdirectory(051.n-queens)
+
 add_subdirectory(template)
