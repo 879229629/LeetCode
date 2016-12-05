@@ -110,4 +110,6 @@ add_subdirectory(053.maximum-subarray)
 
 add_subdirectory(054.spiral-matrix)
 
+add_subdirectory(055.jump-game)
+
 add_subdirectory(template)
