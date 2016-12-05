@@ -108,4 +108,6 @@ add_subdirectory(052.n-queens-ii)
 
 add_subdirectory(053.maximum-subarray)
 
+add_subdirectory(054.spiral-matrix)
+
 add_subdirectory(template)
