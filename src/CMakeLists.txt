@@ -114,4 +114,6 @@ add_subdirectory(055.jump-game)
 
 add_subdirectory(056.merge-intervals)
 
+add_subdirectory(057.insert-interval)
+
 add_subdirectory(template)
