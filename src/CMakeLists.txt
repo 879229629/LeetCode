@@ -120,4 +120,6 @@ add_subdirectory(058.length-of-last-word)
 
 add_subdirectory(059.spiral-matrix-ii)
 
+add_subdirectory(060.permutation-sequence)
+
 add_subdirectory(template)
