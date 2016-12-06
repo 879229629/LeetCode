@@ -1,44 +1,22 @@
 #include "solution.h"
 
 std::vector<Interval> solution::insert(std::vector<Interval> &intervals, Interval newInterval) {
-    if (intervals.empty()) return {newInterval};
-    std::sort(intervals.begin(), intervals.end(), [](Interval &l, Interval &r) {
-        return l.start < r.start;
-    });
     std::vector<Interval> result;
-    if (intervals[0].start > newInterval.end) {
-        result.push_back(newInterval);
-        for (auto it:intervals) result.push_back(it);
-        return result;
+    int index = 0;
+
+    while (index < intervals.size() && intervals[index].end < newInterval.start) {
+        result.push_back(intervals[index]);
+        ++index;
     }
 
-    bool found = false;
+    while (index < intervals.size() && intervals[index].start<=newInterval.end){
+        newInterval.start = std::min(newInterval.start,intervals[index].start);
+        newInterval.end = std::max(newInterval.end,intervals[index].end);
+        ++index;
+    }
 
-    for (auto it : intervals) {
-        if (!found) {
-            if (it.end < newInterval.start) {
-                result.push_back(it);
-                continue;
-            } else {
-                found = true;
-                if (it.start > newInterval.end) {
-                    result.push_back(newInterval);
-                    result.push_back(it);
-                } else {
-                    result.push_back(
-                            Interval(std::min(it.start, newInterval.start), std::max(it.end, newInterval.end)));
-                }
-            }
-        } else {
-            if (result.back().end < it.start) {
-                result.push_back(it);
-            } else {
-                result.back().end = std::max(result.back().end, it.end);
-            }
-        }
-    }
-    if (result.back().end < newInterval.start) {
-        result.push_back(newInterval);
-    }
+    result.push_back(newInterval);
+
+    while (index<intervals.size()) result.push_back(intervals[index++]);
     return result;
 }
