@@ -1,7 +1,7 @@
 #ifndef LEETCODE_024_SOLUTION_H_
 #define LEETCODE_024_SOLUTION_H_
 
-#include "../common/listnode.h"
+#include "../../common/listnode.h"
 
 class solution {
 public:
