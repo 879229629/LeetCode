@@ -9,3 +9,5 @@ add_subdirectory(063.unique-paths-ii)
 add_subdirectory(064.minimum-path-sum)
 
 add_subdirectory(065.valid-number)
+
+add_subdirectory(066.plus-one)
