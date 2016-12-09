@@ -1,16 +1,17 @@
 #include "solution.h"
 
 int solution::mySqrt(int x) {
-    long from = 1;
-    long to = x;
+    if (x == 0) return 0;
+    int from = 1;
+    int to = x;
 
     while (from + 1 < to) {
-        long mid = from + (to - from) / 2;
-        if (mid * mid <= x) from = mid;
+        int mid = from + (to - from) / 2;
+        if (mid <= x / mid) from = mid;
         else to = mid;
     }
-    if (to * to <= x) {
-        return (int) to;
+    if (to <= x / to) {
+        return to;
     }
-    return (int) from;
+    return from;
 }
