@@ -13,3 +13,5 @@ add_subdirectory(065.valid-number)
 add_subdirectory(066.plus-one)
 
 add_subdirectory(067.add-binary)
+
+add_subdirectory(068.text-justification)
