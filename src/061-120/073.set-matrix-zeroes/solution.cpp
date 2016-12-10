@@ -1,7 +1,7 @@
 #include "solution.h"
 
 void solution::setZeroes(std::vector<std::vector<int>> &matrix) {
-    if(matrix.empty()) return;
+    if (matrix.empty()) return;
     int m = matrix.size();
     int n = matrix[0].size();
     bool row = false;
@@ -25,7 +25,6 @@ void solution::setZeroes(std::vector<std::vector<int>> &matrix) {
             if (matrix[i][j] == 0) {
                 matrix[0][j] = 0;
                 matrix[i][0] = 0;
-                break;
             }
         }
     }
