@@ -19,3 +19,5 @@ add_subdirectory(068.text-justification)
 add_subdirectory(069.sqrtx)
 
 add_subdirectory(070.climbing-stairs)
+
+add_subdirectory(071.simplify-path)
