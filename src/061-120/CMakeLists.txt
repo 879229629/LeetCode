@@ -21,3 +21,5 @@ add_subdirectory(069.sqrtx)
 add_subdirectory(070.climbing-stairs)
 
 add_subdirectory(071.simplify-path)
+
+add_subdirectory(072.edit-distance)
