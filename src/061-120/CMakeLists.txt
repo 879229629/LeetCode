@@ -35,3 +35,5 @@ add_subdirectory(076.minimum-window-substring)
 add_subdirectory(077.combinations)
 
 add_subdirectory(078.subsets)
+
+add_subdirectory(079.word-search)
