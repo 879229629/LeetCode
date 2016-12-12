@@ -45,3 +45,5 @@ add_subdirectory(081.search-in-rotated-sorted-array-ii)
 add_subdirectory(082.remove-duplicates-from-sorted-list-ii)
 
 add_subdirectory(083.remove-duplicates-from-sorted-list)
+
+add_subdirectory(084.largest-rectangle-in-histogram)
