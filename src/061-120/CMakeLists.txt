@@ -49,3 +49,5 @@ add_subdirectory(083.remove-duplicates-from-sorted-list)
 add_subdirectory(084.largest-rectangle-in-histogram)
 
 add_subdirectory(085.maximal-rectangle)
+
+add_subdirectory(086.partition-list)
