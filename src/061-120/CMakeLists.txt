@@ -53,3 +53,5 @@ add_subdirectory(085.maximal-rectangle)
 add_subdirectory(086.partition-list)
 
 add_subdirectory(088.merge-sorted-array)
+
+add_subdirectory(089.gray-code)
