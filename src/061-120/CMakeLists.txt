@@ -63,3 +63,5 @@ add_subdirectory(091.decode-ways)
 add_subdirectory(092.reverse-linked-list-ii)
 
 add_subdirectory(093.restore-ip-addresses)
+
+add_subdirectory(094.binary-tree-inorder-traversal)
