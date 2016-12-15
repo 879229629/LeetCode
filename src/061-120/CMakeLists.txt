@@ -67,3 +67,5 @@ add_subdirectory(093.restore-ip-addresses)
 add_subdirectory(094.binary-tree-inorder-traversal)
 
 add_subdirectory(095.unique-binary-search-trees-ii)
+
+add_subdirectory(096.unique-binary-search-trees)
