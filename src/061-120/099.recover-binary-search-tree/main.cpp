@@ -11,7 +11,7 @@ void print(std::string s, std::vector<int> nums) {
 }
 
 int main(int argc, char *argv[]) {
-    TreeNode *node = new TreeNode({10,12,15,2,6,5,16});
+    TreeNode *node = new TreeNode({2,3,1});
     auto nums = node->printByInorder2();
     print("befor:", nums);
     solution s;

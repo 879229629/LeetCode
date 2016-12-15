@@ -12,13 +12,14 @@ void solution::recoverTree(TreeNode *root) {
         }
         if (!s.empty()) {
             TreeNode *tmp = s.back();
-            if (data.empty() || data.back()->val < tmp->val) data.push_back(tmp);
-            else {
+            if (!data.empty() && data.back()->val >= tmp->val) {
                 TreeNode *errorNode = data.back();
                 data.pop_back();
                 result.push_back(errorNode);
                 result.push_back(tmp);
             }
+
+            data.push_back(tmp);
             s.pop_back();
             p = tmp->right;
         }
