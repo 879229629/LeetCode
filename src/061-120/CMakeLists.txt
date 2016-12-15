@@ -71,3 +71,5 @@ add_subdirectory(095.unique-binary-search-trees-ii)
 add_subdirectory(096.unique-binary-search-trees)
 
 add_subdirectory(097.interleaving-string)
+
+add_subdirectory(098.validate-binary-search-tree)
