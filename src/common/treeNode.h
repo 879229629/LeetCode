@@ -16,6 +16,8 @@ public:
     // 层遍历
     std::vector<int> printByLayer();
 
+    std::vector<std::vector<int>> printByLayer2();
+
     // 前序
     void printByPreorder(std::vector<int> &nums);
 
@@ -29,6 +31,8 @@ public:
 
     // 后序
     void printByPostorder(std::vector<int> &nums);
+
+    std::vector<int> printByPostorder2();
 };
 
 #endif //LEETCODE_TREENODE_H

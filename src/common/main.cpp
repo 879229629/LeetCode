@@ -17,6 +17,15 @@ int main() {
     nums = node->printByLayer();
     print("层遍历:", nums);
 
+    std::vector<std::vector<int>> result = node->printByLayer2();
+    std::cout << "层遍历:\n";
+    for (int i = 0; i < result.size(); ++i) {
+        for (int j = 0; j < result[i].size(); ++j) {
+            std::cout << result[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+
     nums.clear();
     node->printByPreorder(nums);
     print("前序遍历:", nums);
@@ -37,4 +46,8 @@ int main() {
     nums.clear();
     node->printByPostorder(nums);
     print("后序遍历:", nums);
+
+    nums.clear();
+    nums = node->printByPostorder2();
+    print("后序遍历2:", nums);
 }
