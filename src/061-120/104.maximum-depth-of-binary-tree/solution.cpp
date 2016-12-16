@@ -1,5 +1,6 @@
 #include "solution.h"
 
 int solution::maxDepth(TreeNode *root) {
-    return 0;
+    if (!root) return 0;
+    return 1 + std::max(maxDepth(root->left), maxDepth(root->right));
 }
