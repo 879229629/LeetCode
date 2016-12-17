@@ -95,3 +95,5 @@ add_subdirectory(107.binary-tree-level-order-traversal-ii)
 add_subdirectory(108.convert-sorted-array-to-binary-search-tree)
 
 add_subdirectory(109.convert-sorted-list-to-binary-search-tree)
+
+add_subdirectory(110.balanced-binary-tree)
