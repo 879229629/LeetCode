@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+
+set(SOURCE_FILES main.cpp solution.cpp ../../common/treeNode.cpp ../../common/listnode.cpp)
+
+add_executable(109.out ${SOURCE_FILES})
