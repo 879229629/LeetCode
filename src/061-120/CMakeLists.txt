@@ -99,3 +99,5 @@ add_subdirectory(109.convert-sorted-list-to-binary-search-tree)
 add_subdirectory(110.balanced-binary-tree)
 
 add_subdirectory(111.minimum-depth-of-binary-tree)
+
+add_subdirectory(112.path-sum)
