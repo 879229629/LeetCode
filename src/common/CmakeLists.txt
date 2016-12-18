@@ -6,4 +6,4 @@ set(SOURCE_FILES listnode.cpp treeNode.cpp treeNode.h)
 
 add_library(common ${SOURCE_FILES})
 
-add_executable(common.out main.cpp ${SOURCE_FILES})
+add_executable(common.out main.cpp ${SOURCE_FILES} treelinknode.cpp treelinknode.h treeLinkNode.cpp treeLinkNode.h)

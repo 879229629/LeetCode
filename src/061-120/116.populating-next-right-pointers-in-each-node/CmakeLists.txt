@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+
+set(SOURCE_FILES main.cpp solution.cpp ../../common/treeLinkNode.cpp)
+
+add_executable(116.out ${SOURCE_FILES})

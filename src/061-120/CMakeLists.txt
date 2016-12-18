@@ -107,3 +107,5 @@ add_subdirectory(113.path-sum-ii)
 add_subdirectory(114.flatten-binary-tree-to-linked-list)
 
 add_subdirectory(115.distinct-subsequences)
+
+add_subdirectory(116.populating-next-right-pointers-in-each-node)
