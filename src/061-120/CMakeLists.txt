@@ -103,3 +103,5 @@ add_subdirectory(111.minimum-depth-of-binary-tree)
 add_subdirectory(112.path-sum)
 
 add_subdirectory(113.path-sum-ii)
+
+add_subdirectory(114.flatten-binary-tree-to-linked-list)
