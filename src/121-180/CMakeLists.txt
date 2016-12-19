@@ -7,3 +7,7 @@ add_subdirectory(122.best-time-to-buy-and-sell-stock-ii)
 add_subdirectory(123.best-time-to-buy-and-sell-stock-iii)
 
 add_subdirectory(124.binary-tree-maximum-path-sum)
+
+add_subdirectory(125.valid-palindrome)
+
+add_subdirectory(126.word-ladder-ii)
