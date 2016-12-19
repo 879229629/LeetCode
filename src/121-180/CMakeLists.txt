@@ -11,3 +11,5 @@ add_subdirectory(124.binary-tree-maximum-path-sum)
 add_subdirectory(125.valid-palindrome)
 
 add_subdirectory(126.word-ladder-ii)
+
+add_subdirectory(128.longest-consecutive-sequence)
