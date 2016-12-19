@@ -3,3 +3,14 @@ language: cpp
 compiler:
     - clang
 
+before_install:
+    - mkdir build
+
+install:
+    - cd ./build && cmake .. && make
+
+script:
+    ./src/common/common.out
+
+os:
+  - osx
