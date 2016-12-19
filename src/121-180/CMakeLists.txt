@@ -6,3 +6,4 @@ add_subdirectory(122.best-time-to-buy-and-sell-stock-ii)
 
 add_subdirectory(123.best-time-to-buy-and-sell-stock-iii)
 
+add_subdirectory(124.binary-tree-maximum-path-sum)
