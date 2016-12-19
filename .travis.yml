@@ -1,4 +1,9 @@
-language: cpp
+language:
+    - cpp
+
+branches:
+    only:
+        - master
 
 compiler:
     - clang
@@ -7,10 +12,26 @@ before_install:
     - mkdir build
 
 install:
-    - cd ./build && cmake .. && make
+    - cd ./build
+    - cmake ..
+    - make
 
 script:
-    ./src/common/common.out
+    - ./src/common/common.out
 
 os:
-  - osx
+    - osx
+
+notifications:
+    email: true
+    irc:
+        channels:
+            - chat.freenode.net#rubinius
+        template:
+            - "%{repository}/%{branch} (%{commit} - %{author}): %{build_url}: %{message}"
+    webhooks:
+        urls: ~
+        secure: !
+        on_success: always
+        on_failure: always
+        on_start: always
