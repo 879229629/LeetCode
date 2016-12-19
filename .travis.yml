@@ -9,6 +9,7 @@ compiler:
     - clang
 
 before_install:
+    - rvm use ruby-2.0.0-p648
     - mkdir build
 
 install:
