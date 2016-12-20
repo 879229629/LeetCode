@@ -17,3 +17,5 @@ add_subdirectory(128.longest-consecutive-sequence)
 add_subdirectory(129.sum-root-to-leaf-numbers)
 
 add_subdirectory(130.surrounded-regions)
+
+add_subdirectory(131.palindrome-partitioning)
