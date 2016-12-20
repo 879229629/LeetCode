@@ -15,3 +15,5 @@ add_subdirectory(126.word-ladder-ii)
 add_subdirectory(128.longest-consecutive-sequence)
 
 add_subdirectory(129.sum-root-to-leaf-numbers)
+
+add_subdirectory(130.surrounded-regions)
