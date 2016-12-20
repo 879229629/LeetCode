@@ -2,6 +2,29 @@
 
 #include <iostream>
 
+std::vector<std::vector<std::string>> solution::partition(std::string s) {
+    std::vector<std::vector<std::string>> result;
+    std::vector<std::string> words;
+    helper(result, words, s, 0);
+    return result;
+}
+
+void solution::helper(std::vector<std::vector<std::string>> &result,
+                      std::vector<std::string> &words,
+                      const std::string &s,
+                      int pos) {
+    if (pos == s.length()) {
+        result.push_back(words);
+    }
+    for (int i = pos; i < s.length(); ++i) {
+        std::string first = s.substr(pos, i - pos + 1);
+        if (!isPalindrome(first)) continue;
+        words.push_back(first);
+        helper(result, words, s, i + 1);
+        words.pop_back();
+    }
+}
+
 bool solution::isPalindrome(std::string s) {
     if (s.empty()) return true;
     int i = 0;
@@ -12,26 +35,4 @@ bool solution::isPalindrome(std::string s) {
         --j;
     }
     return true;
-}
-
-std::vector<std::vector<std::string>> solution::partition(std::string s) {
-    if (s.empty()) return {};
-    std::vector<std::vector<std::string>> result;
-    for (int i = 0; i < s.length(); ++i) {
-        std::string first = s.substr(0, i + 1);
-        std::string second = s.substr(i + 1);
-        if (!isPalindrome(first)) continue;
-        if (second.empty()) {
-            result.push_back({first});
-        } else {
-            std::vector<std::vector<std::string>> data = partition(second);
-            for (auto &d:data) {
-                std::vector<std::string> t;
-                t.push_back(first);
-                std::copy(d.begin(), d.end(), std::back_inserter(t));
-                result.push_back(t);
-            }
-        }
-    }
-    return result;
 }
