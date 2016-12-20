@@ -4,6 +4,7 @@
 
 int main(int argc, char *argv[]) {
     solution s;
-    int ret = s.minCut("fifgbeajcacehiicccfecbfhhgfiiecdcjjffbghdidbhbdbfbfjccgbbdcjheccfbhafehieabbdfeigbiaggchaeghaijfbjhi");
-    std::cout << "s: " << ret << std::endl;
+    std::string word = "aab";
+    int ret = s.minCut(word);
+    std::cout << "s: [" << word << "][" << ret << std::endl;
 }
