@@ -126,5 +126,4 @@ void heapSort(std::vector<int> &nums) {
     }
 }
 
-
 #endif // LEETCODE_SORT_H_
