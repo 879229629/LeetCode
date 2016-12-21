@@ -77,8 +77,11 @@ void sort() {
 //    bubble_sort(nums);
 //    print("冒泡:", nums);
 
-    insertion_sort(nums);
-    print("插入:", nums);
+//    insertion_sort(nums);
+//    print("插入:", nums);
+
+    bin_insertion_sort(nums);
+    print("二分法插入:", nums);
 }
 
 int main() {

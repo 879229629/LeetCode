@@ -7,7 +7,7 @@
 
 /*
  稳定的排序[编辑]
- * 二分查找插入排序
+ *
  * 桶排序（bucket sort）—O(n)；需要O(k)额外空间
  * 计数排序（counting sort）—O(n+k)；需要O(n+k)额外空间
  * 归并排序（merge sort）—O(n log n)；需要O(n)额外空间
@@ -41,8 +41,26 @@ void insertion_sort(std::vector<int> &arr) {
         for (; j >= 0 && arr[j] > tmp; --j) {
             arr[j + 1] = arr[j];
         }
-        arr[j+1] = tmp;
+        arr[j + 1] = tmp;
     }
 }
+
+// 二分查找插入排序
+void bin_insertion_sort(std::vector<int> &arr) {
+    for (int i = 1; i < arr.size(); ++i) {
+        int tmp = arr[i];
+        int from = 0;
+        int to = i - 1;
+        while (from <= to) {
+            int mid = from + (to - from) / 2;
+            if (arr[mid] < tmp) from = mid + 1;
+            else to = mid - 1;
+        }
+        int j = i;
+        while (--j >= from) arr[j + 1] = arr[j];
+        arr[from] = tmp;
+    }
+}
+
 
 #endif // LEETCODE_SORT_H_
