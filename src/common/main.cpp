@@ -1,6 +1,16 @@
 #include <iostream>
 #include <vector>
 #include "treeNode.h"
+#include "listnode.h"
+
+void print(ListNode *n) {
+    std::cout << "node: ";
+    while (n != nullptr) {
+        std::cout << n->val << ", ";
+        n = n->next;
+    }
+    std::cout << std::endl;
+}
 
 void print(std::string s, std::vector<int> nums) {
     std::cout << s << std::endl;
@@ -10,7 +20,7 @@ void print(std::string s, std::vector<int> nums) {
     std::cout << std::endl;
 }
 
-int main() {
+void treenode() {
     std::vector<int> nums = {1, 2, 3, 4, 5, 999, 6, 999, 999, 7, 999, 8};
     print("原数据:", nums);
     TreeNode *node = new TreeNode(nums);
@@ -50,4 +60,15 @@ int main() {
     nums.clear();
     nums = node->printByPostorder2();
     print("后序遍历2:", nums);
+}
+
+void listnode() {
+    ListNode *node = new ListNode({3, 7, 3, 1, 7, 9, 10});
+    node->print();
+    ListNode *n = node->insertionSortList(node);
+    n->print();
+}
+
+int main() {
+    listnode();
 }

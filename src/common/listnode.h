@@ -15,6 +15,8 @@ public:
     ~ListNode();
 
     void print();
+
+    ListNode *insertionSortList(ListNode *head);
 };
 
 
