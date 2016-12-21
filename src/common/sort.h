@@ -8,8 +8,6 @@
 /*
  稳定的排序[编辑]
  *
- * 桶排序（bucket sort）—O(n)；需要O(k)额外空间
- * 计数排序（counting sort）—O(n+k)；需要O(n+k)额外空间
  * 归并排序（merge sort）—O(n log n)；需要O(n)额外空间
  * 二叉排序树排序（binary tree sort）— O(n log n)期望时间；O(n2)最坏时间；需要O(n)额外空间
  * 基数排序（radix sort）—O(n·k)；需要O(n)额外空间
@@ -62,5 +60,27 @@ void bin_insertion_sort(std::vector<int> &arr) {
     }
 }
 
+// 归并排序
+void merge_sort_recursive(std::vector<int> &arr, std::vector<int> &nums, int start, int end) {
+    if (start >= end) return;
+    int mid = start + (end - start) / 2;
+    int start1 = start, end1 = mid;
+    int start2 = mid + 1, end2 = end;
+    merge_sort_recursive(arr, nums, start1, end1);
+    merge_sort_recursive(arr, nums, start2, end2);
+    int k = start;
+    while (start1 <= end1 && start2 <= end2) {
+        nums[k++] = arr[start1] < arr[start2] ? arr[start1++] : arr[start2++];
+    }
+    while (start1 <= end1) nums[k++] = arr[start1++];
+    while (start2 <= end2) nums[k++] = arr[start2++];
+
+    for (k = start; k <= end; ++k) arr[k] = nums[k];
+}
+
+void merge_sort(std::vector<int> &arr) {
+    std::vector<int> nums(arr.size());
+    merge_sort_recursive(arr, nums, 0, arr.size() - 1);
+}
 
 #endif // LEETCODE_SORT_H_

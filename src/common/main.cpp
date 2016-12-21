@@ -80,8 +80,11 @@ void sort() {
 //    insertion_sort(nums);
 //    print("插入:", nums);
 
-    bin_insertion_sort(nums);
-    print("二分法插入:", nums);
+//    bin_insertion_sort(nums);
+//    print("二分法插入:", nums);
+
+    merge_sort(nums);
+    print("归并排序:",nums);
 }
 
 int main() {
