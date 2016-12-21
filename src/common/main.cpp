@@ -71,10 +71,14 @@ void listnode() {
 }
 
 void sort() {
-    std::vector<int> nums = {3, 3, 4, 56, 62, 3};
+    std::vector<int> nums = {3, 122, 4, 56, 62, 3};
     print("原始:", nums);
-    bubble_sort(nums);
-    print("冒泡:", nums);
+
+//    bubble_sort(nums);
+//    print("冒泡:", nums);
+
+    insertion_sort(nums);
+    print("插入:", nums);
 }
 
 int main() {
