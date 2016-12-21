@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES listnode.cpp treeNode.cpp treeNode.h)
+file(GLOB SOURCES *.cpp)
 
-add_library(common ${SOURCE_FILES})
+#add_library(common ${SOURCE})
 
-add_executable(common.out main.cpp ${SOURCE_FILES} treelinknode.cpp treelinknode.h treeLinkNode.cpp treeLinkNode.h)
+add_executable(common.out main.cpp ${SOURCES})

@@ -2,6 +2,7 @@
 #include <vector>
 #include "treeNode.h"
 #include "listnode.h"
+#include "sort.h"
 
 void print(ListNode *n) {
     std::cout << "node: ";
@@ -69,6 +70,13 @@ void listnode() {
     n->print();
 }
 
+void sort() {
+    std::vector<int> nums = {3, 3, 4, 56, 62, 3};
+    print("原始:", nums);
+    bubble_sort(nums);
+    print("冒泡:", nums);
+}
+
 int main() {
-    listnode();
+    sort();
 }
