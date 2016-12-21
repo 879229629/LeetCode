@@ -5,11 +5,6 @@
 #include <string>
 #include <iostream>
 
-/*
- 不稳定的排序[编辑]
- * 堆排序（heap sort）—O(n log n)
- */
-
 // 冒泡排序
 void bubble_sort(std::vector<int> &arr) {
     for (int i = 0; i < arr.size(); ++i) {
@@ -102,5 +97,34 @@ void quick_sort_recursive(std::vector<int> &arr, int start, int end) {
 void quick_sort(std::vector<int> &arr) {
     quick_sort_recursive(arr, 0, arr.size() - 1);
 }
+
+// 堆排序
+void heapAdjust(std::vector<int> &nums, int from, int to) {
+    int l = 2 * from;
+    int r = 2 * from + 1;
+    int max = from;
+    if (from < to / 2) {
+        if (l <= to && nums[l] > nums[max]) max = l;
+        if (r <= to && nums[r] > nums[max]) max = r;
+        if (max != from) {
+            std::swap(nums[from], nums[max]);
+            heapAdjust(nums, max, to);
+        }
+    }
+}
+
+void heapSort(std::vector<int> &nums) {
+    if (nums.empty()) return;
+    int len = nums.size();
+    for (int i = len / 2; i >= 0; --i) {
+        heapAdjust(nums, i, len - 1);
+    }
+
+    for (int j = len - 1; j >= 0; --j) {
+        std::swap(nums[0], nums[j]);
+        heapAdjust(nums, 0, j);
+    }
+}
+
 
 #endif // LEETCODE_SORT_H_

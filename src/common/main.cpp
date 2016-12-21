@@ -74,8 +74,8 @@ void sort() {
     std::vector<int> nums = {3, 122, 4, 56, 62, 3};
     print("原始:", nums);
 
-    quick_sort(nums);
-    print("快速:", nums);
+    heapSort(nums);
+    print("堆排序:", nums);
 }
 
 int main() {
