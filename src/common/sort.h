@@ -6,18 +6,8 @@
 #include <iostream>
 
 /*
- 稳定的排序[编辑]
- *
- * 二叉排序树排序（binary tree sort）— O(n log n)期望时间；O(n2)最坏时间；需要O(n)额外空间
- * 基数排序（radix sort）—O(n·k)；需要O(n)额外空间
- * 块排序（block sort）— O(n log n)
- *
-
  不稳定的排序[编辑]
- * 选择排序（selection sort）—O(n2)
- * 希尔排序（shell sort）—O(n log2 n)如果使用最佳的现在版本
  * 堆排序（heap sort）—O(n log n)
- * 快速排序（quick sort）—O(n log n)期望时间，O(n2)最坏情况；对于大的、随机数列表一般相信是最快的已知排序
  */
 
 // 冒泡排序
@@ -91,6 +81,26 @@ void selection_sort(std::vector<int> &arr) {
         }
         std::swap(arr[i], arr[min]);
     }
+}
+
+// 快速排序
+void quick_sort_recursive(std::vector<int> &arr, int start, int end) {
+    if (start >= end) return;
+    int left = start;
+    int right = end - 1;
+    while (left < right) {
+        while (left < right && arr[left] < arr[end]) ++left;
+        while (left < right && arr[right] >= arr[end]) --right;
+        std::swap(arr[left], arr[right]);
+    }
+    if (arr[left] >= arr[end]) std::swap(arr[left], arr[end]); else ++left;
+
+    quick_sort_recursive(arr, start, left - 1);
+    quick_sort_recursive(arr, left + 1, end);
+}
+
+void quick_sort(std::vector<int> &arr) {
+    quick_sort_recursive(arr, 0, arr.size() - 1);
 }
 
 #endif // LEETCODE_SORT_H_

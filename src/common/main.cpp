@@ -74,8 +74,8 @@ void sort() {
     std::vector<int> nums = {3, 122, 4, 56, 62, 3};
     print("原始:", nums);
 
-    selection_sort(nums);
-    print("选择", nums);
+    quick_sort(nums);
+    print("快速:", nums);
 }
 
 int main() {
