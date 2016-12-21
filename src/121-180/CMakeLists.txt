@@ -49,3 +49,5 @@ add_subdirectory(146.lru-cache)
 add_subdirectory(147.insertion-sort-list)
 
 add_subdirectory(148.sort-list)
+
+add_subdirectory(149.max-points-on-a-line)
