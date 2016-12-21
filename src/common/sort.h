@@ -8,7 +8,6 @@
 /*
  稳定的排序[编辑]
  *
- * 归并排序（merge sort）—O(n log n)；需要O(n)额外空间
  * 二叉排序树排序（binary tree sort）— O(n log n)期望时间；O(n2)最坏时间；需要O(n)额外空间
  * 基数排序（radix sort）—O(n·k)；需要O(n)额外空间
  * 块排序（block sort）— O(n log n)
@@ -81,6 +80,17 @@ void merge_sort_recursive(std::vector<int> &arr, std::vector<int> &nums, int sta
 void merge_sort(std::vector<int> &arr) {
     std::vector<int> nums(arr.size());
     merge_sort_recursive(arr, nums, 0, arr.size() - 1);
+}
+
+// 选择排序
+void selection_sort(std::vector<int> &arr) {
+    for (int i = 0; i < arr.size() - 1; ++i) {
+        int min = i;
+        for (int j = i + 1; j < arr.size(); ++j) {
+            if (arr[j] < arr[i]) min = j;
+        }
+        std::swap(arr[i], arr[min]);
+    }
 }
 
 #endif // LEETCODE_SORT_H_
