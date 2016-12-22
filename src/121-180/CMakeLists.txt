@@ -51,3 +51,5 @@ add_subdirectory(147.insertion-sort-list)
 add_subdirectory(148.sort-list)
 
 add_subdirectory(149.max-points-on-a-line)
+
+add_subdirectory(150.evaluate-reverse-polish-notation)
