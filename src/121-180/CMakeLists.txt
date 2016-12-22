@@ -61,3 +61,5 @@ add_subdirectory(152.maximum-product-subarray)
 add_subdirectory(153.find-minimum-in-rotated-sorted-array)
 
 add_subdirectory(154.find-minimum-in-rotated-sorted-array-ii)
+
+add_subdirectory(155.min-stack)

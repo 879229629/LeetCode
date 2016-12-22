@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+
+set(SOURCE_FILES main.cpp minStack.cpp)
+
+add_executable(155.out ${SOURCE_FILES})
