@@ -4,6 +4,11 @@
 #include "listnode.h"
 #include "sort.h"
 
+
+#define container_of(ptr, type, member) ({ \
+     const typeof( ((type *)0)->member ) *__mptr = (ptr); \
+     (type *)( (char *)__mptr - offsetof(type,member) );})
+
 void print(ListNode *n) {
     std::cout << "node: ";
     while (n != nullptr) {
@@ -73,11 +78,40 @@ void listnode() {
 void sort() {
     std::vector<int> nums = {3, 122, 4, 56, 62, 3};
     print("原始:", nums);
-
     heapSort(nums);
     print("堆排序:", nums);
 }
 
+struct A {
+    std::string s;
+    short c;
+    int d;
+};
+
+struct B {
+    A a;
+    char c;
+};
+
+void test() {
+    std::cout << "char:" << sizeof(char) << "\n";
+    std::cout << "unsigned char:" << sizeof(unsigned char) << "\n";
+    std::cout << "short:" << sizeof(short) << "\n";
+    std::cout << "int:" << sizeof(int) << "\n";
+    std::cout << "unsigned int:" << sizeof(unsigned int) << "\n";
+    std::cout << "float:" << sizeof(float) << "\n";
+    std::cout << "double:" << sizeof(double) << "\n";
+    std::cout << "long:" << sizeof(long) << "\n";
+    std::cout << "long long:" << sizeof(long long) << "\n";
+    std::cout << "string:" << sizeof(std::string) << "\n";
+    std::cout << "nullptr:" << sizeof(nullptr) << "\n";
+
+    std::cout << "A:" << sizeof(A) << "\n";
+    std::cout << "A d:" << offsetof(A, d) << "\n";
+    std::cout << "B:" << sizeof(B) << "\n";
+}
+
 int main() {
-    sort();
+    test();
+
 }
