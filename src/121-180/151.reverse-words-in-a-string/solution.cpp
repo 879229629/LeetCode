@@ -2,26 +2,9 @@
 #include <iostream>
 
 void solution::reverseWords(std::string &s) {
-    int len = s.length();
-
-    int begin = 0;
-    int end = len - 1;
-    while (begin < end) std::swap(s[begin++], s[end--]);
-
-    begin = 0;
-    end = len - 1;
-    while (begin <= end) {
-        while (begin <= end && s[begin] == ' ') ++begin;
-        int pos = begin;
-        while (pos <= end && s[pos] != ' ') ++pos;
-        int i = begin;
-        int j = pos - 1;
-        while (i < j) std::swap(s[i++], s[j--]);
-        begin = pos;
-    }
     int k = 0;
     int i = 0;
-    while (i < len) {
+    while (i < s.length()) {
         if (s[i] == ' ') {
             ++i;
             if (k >= 1 && s[k - 1] != ' ') s[k++] = ' ';
@@ -32,4 +15,14 @@ void solution::reverseWords(std::string &s) {
     }
     if (k > 0 && s[k - 1] == ' ') --k;
     s.erase(k);
+
+    std::reverse(s.begin(), s.end());
+
+    int begin = 0;
+    while (begin < s.length()) {
+        int pos = begin;
+        while (pos < s.length() && s[pos] != ' ') ++pos;
+        std::reverse(s.begin() + begin, s.begin() + pos);
+        begin = pos+1;
+    }
 }
