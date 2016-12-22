@@ -1,36 +1,32 @@
 #ifndef LEETCODE_MINSTACK_H_
 #define LEETCODE_MINSTACK_H_
 
-#include <vector>
-#include <map>
+#include <stack>
 
 class MinStack {
 public:
-    std::vector<int> nums;
-    std::map<int, int> keys;
+    std::stack<int> s1;
+    std::stack<int> s2;
 
     MinStack() {
     }
 
     void push(int x) {
-        nums.push_back(x);
-        ++keys[x];
+        s1.push(x);
+        if (s2.empty() || x <= getMin()) s2.push(x);
     }
 
     void pop() {
-        int v = top();
-        nums.pop_back();
-        if (keys[v] == 1) keys.erase(v);
-        else --keys[v];
+        if(s1.top()==s2.top()) s2.pop();
+        s1.pop();
     }
 
     int top() {
-        return nums.back();
+        return s1.top();
     }
 
     int getMin() {
-        const auto &v = keys.begin();
-        return v->first;
+        return s2.top();
     }
 };
 
