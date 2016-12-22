@@ -59,3 +59,5 @@ add_subdirectory(151.reverse-words-in-a-string)
 add_subdirectory(152.maximum-product-subarray)
 
 add_subdirectory(153.find-minimum-in-rotated-sorted-array)
+
+add_subdirectory(154.find-minimum-in-rotated-sorted-array-ii)
