@@ -1,6 +1,8 @@
 #include "solution.h"
 #include <iostream>
 
+// http://bookshadow.com/weblog/2014/12/14/leetcode-maximum-gap/
+
 int solution::maximumGap(std::vector<int> &nums) {
     if (nums.size() < 2) return 0;
     int len = nums.size();
