@@ -63,3 +63,5 @@ add_subdirectory(153.find-minimum-in-rotated-sorted-array)
 add_subdirectory(154.find-minimum-in-rotated-sorted-array-ii)
 
 add_subdirectory(155.min-stack)
+
+add_subdirectory(160.intersection-of-two-linked-lists)
