@@ -3,27 +3,11 @@
 #include <set>
 
 ListNode *solution::getIntersectionNode(ListNode *headA, ListNode *headB) {
-    std::set<ListNode *> s;
-
-    while (headA != nullptr && headB != nullptr) {
-        if (s.find(headA) != s.end()) return headA;
-        s.insert(headA);
-        headA = headA->next;
-        if (s.find(headB) != s.end()) return headB;
-        s.insert(headB);
-        headB = headB->next;
+    ListNode *c1 = headA;
+    ListNode *c2 = headB;
+    while (c1 != c2) {
+        c1 = c1 ? c1->next : headB;
+        c2 = c2 ? c2->next : headA;
     }
-
-    while (headA != nullptr) {
-        if (s.find(headA) != s.end()) return headA;
-        s.insert(headA);
-        headA = headA->next;
-    }
-
-    while (headB != nullptr) {
-        if (s.find(headB) != s.end()) return headB;
-        s.insert(headB);
-        headB = headB->next;
-    }
-    return nullptr;
+    return c1;
 }
