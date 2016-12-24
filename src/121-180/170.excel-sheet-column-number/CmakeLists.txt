@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+
+set(SOURCE_FILES main.cpp solution.cpp)
+
+add_executable(170.out ${SOURCE_FILES})
