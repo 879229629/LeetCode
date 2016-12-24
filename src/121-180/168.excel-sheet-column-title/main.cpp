@@ -4,6 +4,6 @@
 
 int main(int argc, char *argv[]) {
     solution s;
-    std::string str = s.convertToTitle(52);
+    std::string str = s.convertToTitle(26);
     std::cout << "s: [" << str<< "]" << std::endl;
 }
