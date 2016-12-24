@@ -7,33 +7,30 @@
 
 class BSTIterator {
 public:
-    std::vector<int> m_;
-    int i = 0;
+    std::vector<TreeNode *> s;
 
     BSTIterator(TreeNode *root) {
-        std::vector<TreeNode *> s;
-        while (root != nullptr || !s.empty()) {
-            while (root != nullptr) {
-                s.push_back(root);
-                root = root->left;
-            }
-            if (!s.empty()) {
-                root = s.back();
-                m_.push_back(root->val);
-                s.pop_back();
-                root = root->right;
-            }
-        }
+        findLeft(root);
     }
 
     /** @return whether we have a next smallest number */
     bool hasNext() {
-        return i<m_.size();
+        return !s.empty();
     }
 
     /** @return the next smallest number */
     int next() {
-        return m_[i++];
+        TreeNode *p = s.back();
+        s.pop_back();
+        findLeft(p->right);
+        return p->val;
+    }
+
+    void findLeft(TreeNode *p) {
+        while (p != nullptr) {
+            s.push_back(p);
+            p = p->left;
+        }
     }
 };
 
