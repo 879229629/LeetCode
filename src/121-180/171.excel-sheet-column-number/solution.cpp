@@ -3,7 +3,7 @@
 int solution::titleToNumber(std::string s) {
     int num = 0;
     for (int i = 0; i < s.length(); ++i) {
-        num = 26 * num + s[i] - 64;
+        num = 26 * num + s[i] - 'A' + 1;
     }
     return num;
 }
