@@ -1,5 +1,5 @@
-#ifndef LEETCODE_10x_SOLUTION_H_
-#define LEETCODE_10x_SOLUTION_H_
+#ifndef LEETCODE_20x_SOLUTION_H_
+#define LEETCODE_20x_SOLUTION_H_
 
 
 class solution {
@@ -7,4 +7,4 @@ public:
 };
 
 
-#endif // LEETCODE_10x_SOLUTION_H_
+#endif // LEETCODE_20x_SOLUTION_H_
