@@ -14,5 +14,6 @@ add_subdirectory(199.binary-tree-right-side-view)
 
 add_subdirectory(200.number-of-islands)
 
-
 add_subdirectory(201.bitwise-and-of-numbers-range)
+
+add_subdirectory(202.happy-number)
