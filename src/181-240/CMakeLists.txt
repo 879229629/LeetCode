@@ -19,3 +19,5 @@ add_subdirectory(201.bitwise-and-of-numbers-range)
 add_subdirectory(202.happy-number)
 
 add_subdirectory(203.remove-linked-list-elements)
+
+add_subdirectory(204.count-primes)
