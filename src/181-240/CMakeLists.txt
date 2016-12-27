@@ -31,3 +31,5 @@ add_subdirectory(207.course-schedule)
 add_subdirectory(208.implement-trie-prefix-tree)
 
 add_subdirectory(209.minimum-size-subarray-sum)
+
+add_subdirectory(210.course-schedule-ii)
