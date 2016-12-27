@@ -3,22 +3,13 @@
 #include <map>
 
 bool solution::isIsomorphic(std::string s, std::string t) {
-    std::map<char, char> mps;
-    std::map<char, char> mpt;
-    if (s.length() != t.length()) return false;
+    int a[256] = {0};
+    int b[256] = {0};
 
     for (int i = 0; i < s.length(); ++i) {
-        if (mps.find(s[i]) == mps.end()) {
-            mps[s[i]] = t[i];
-        } else if (mps[s[i]] != t[i]) {
-            return false;
-        }
-
-        if (mpt.find(t[i]) == mpt.end()) {
-            mpt[t[i]] = s[i];
-        } else if (mpt[t[i]] != s[i]) {
-            return false;
-        }
+        if (a[s[i]] != b[t[i]]) return false;
+        a[s[i]] = i + 1;
+        b[t[i]] = i + 1;
     }
     return true;
 }
