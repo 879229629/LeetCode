@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+
+set(SOURCE_FILES main.cpp trieNode.cpp trieNode.h trie.cpp trie.h)
+
+add_executable(208.out ${SOURCE_FILES})
