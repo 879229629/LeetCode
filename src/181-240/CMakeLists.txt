@@ -23,3 +23,5 @@ add_subdirectory(203.remove-linked-list-elements)
 add_subdirectory(204.count-primes)
 
 add_subdirectory(205.isomorphic-strings)
+
+add_subdirectory(206.reverse-linked-list)
