@@ -21,3 +21,5 @@ add_subdirectory(202.happy-number)
 add_subdirectory(203.remove-linked-list-elements)
 
 add_subdirectory(204.count-primes)
+
+add_subdirectory(205.isomorphic-strings)
