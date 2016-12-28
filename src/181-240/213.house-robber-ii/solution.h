@@ -7,7 +7,7 @@ class solution {
 public:
     int rob(std::vector<int> &nums);
 
-    int rob(std::vector<int> nums, int i, int j);
+    int rob(const std::vector<int> &nums, int i, int j);
 };
 
 

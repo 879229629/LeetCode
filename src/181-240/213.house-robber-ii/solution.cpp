@@ -7,10 +7,15 @@ int solution::rob(std::vector<int> &nums) {
     return std::max(rob(nums, 0, nums.size() - 2), rob(nums, 1, nums.size() - 1));
 }
 
-int solution::rob(std::vector<int> nums, int i, int j) {
-    for (int k = i + 1; k <= j; ++k) {
-        if (k == i + 1) nums[k] = std::max(nums[k], nums[k - 1]);
-        else nums[k] = std::max(nums[k - 1], nums[k] + nums[k - 2]);
+int solution::rob(const std::vector<int> &nums, int i, int j) {
+    if (i == j) return nums[i];
+
+    int current = 0;
+    int pre = 0;
+    for (int k = i; k <= j; ++k) {
+        int temp = pre;
+        pre = current;
+        current = std::max(pre, nums[k] + temp);
     }
-    return nums[j];
+    return current;
 }
