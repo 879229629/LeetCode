@@ -6,4 +6,4 @@ file(GLOB SOURCES *.cpp)
 
 #add_library(common ${SOURCE})
 
-add_executable(common.out main.cpp ${SOURCES} point.cpp point.h)
+add_executable(common.out main.cpp ${SOURCES} point.cpp point.h trieNode.cpp trieNode.h)

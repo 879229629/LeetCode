@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
 
-set(SOURCE_FILES main.cpp solution.cpp)
+set(SOURCE_FILES main.cpp solution.cpp ../211.add-and-search-word-data-structure-design/wordDictionary.cpp ../211.add-and-search-word-data-structure-design/wordDictionary.h)
 
 add_executable(187.out ${SOURCE_FILES})
