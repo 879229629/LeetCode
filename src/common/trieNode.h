@@ -2,14 +2,16 @@
 #define LEETCODE_TRIENODE_H
 
 #include <cstring>
+#include <algorithm>
 
 class TrieNode {
 public:
     bool isKey;
     TrieNode *children[26];
+    int pos;
 
     TrieNode() : isKey(false) {
-        std::memset(children, 0, sizeof(TrieNode *) * 26);
+        std::fill_n(children, 26, nullptr);
     }
 };
 
