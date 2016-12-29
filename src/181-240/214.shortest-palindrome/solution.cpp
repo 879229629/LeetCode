@@ -5,27 +5,19 @@ std::string solution::shortestPalindrome(std::string s) {
     if (s.empty()) return "";
     std::string s1 = s;
     std::reverse(s1.begin(), s1.end());
-
     std::vector<int> nums = findPre(s + "#" + s1);
-    int max = *std::max_element(nums.begin(), nums.end());
-
-    return s1.substr(0, s1.length() - max) + s;
+    return s1.substr(0, s1.length() - nums[nums.size() - 1]) + s;
 }
 
 std::vector<int> solution::findPre(const std::string &s) {
-    std::vector<int> res(s.length());
-    int k = 0;
-    int i = 1;
-    while (i < s.length()) {
-//        std::cout << k << "," << i << "\n";
-        if (s[i] == s[k]) {
-            res[i++] = ++k;
-        } else {
-            ++i;
-            k = res[k];
-        }
+    std::vector<int> p(s.length());
+    for (int i = 1; i < s.size(); ++i) {
+        int j = p[i - 1];
+        while (j > 0 && s[i] != s[j])
+            j = p[j - 1];
+        p[i] = (j += s[i] == s[j]);
     }
-    return res;
+    return p;
 }
 
 std::vector<int> solution::next(const std::string &s) {

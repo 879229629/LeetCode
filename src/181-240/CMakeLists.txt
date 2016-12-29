@@ -41,3 +41,6 @@ add_subdirectory(212.word-search-ii)
 add_subdirectory(213.house-robber-ii)
 
 add_subdirectory(214.shortest-palindrome)
+
+add_subdirectory(215.kth-largest-element-in-an-array)
+
