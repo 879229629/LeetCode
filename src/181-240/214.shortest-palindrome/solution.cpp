@@ -13,9 +13,11 @@ std::vector<int> solution::findPre(const std::string &s) {
     std::vector<int> p(s.length());
     for (int i = 1; i < s.size(); ++i) {
         int j = p[i - 1];
-        while (j > 0 && s[i] != s[j])
-            j = p[j - 1];
-        p[i] = (j += s[i] == s[j]);
+        std::cout << "begin " << i << ", " << j << " \n";
+        while (j > 0 && s[i] != s[j])j = p[j - 1];
+        std::cout << "end " <<  i << ", " << j << " \n";
+        j += s[i] == s[j];
+        p[i] = j;
     }
     return p;
 }
