@@ -5,7 +5,9 @@
 
 class solution {
 public:
-    int findKthLargest(std::vector<int>& nums, int k);
+    int findKthLargest(std::vector<int> &nums, int k);
+
+    void max_heapify(std::vector<int> &nums, int start, int end);
 };
 
 
