@@ -46,3 +46,5 @@ add_subdirectory(215.kth-largest-element-in-an-array)
 
 add_subdirectory(216.combination-sum-iii)
 
+add_subdirectory(217.contains-duplicate)
+
