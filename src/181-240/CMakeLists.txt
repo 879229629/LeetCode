@@ -39,3 +39,5 @@ add_subdirectory(211.add-and-search-word-data-structure-design)
 add_subdirectory(212.word-search-ii)
 
 add_subdirectory(213.house-robber-ii)
+
+add_subdirectory(214.shortest-palindrome)
