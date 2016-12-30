@@ -52,3 +52,5 @@ add_subdirectory(219.contains-duplicate-ii)
 
 add_subdirectory(220.contains-duplicate-iii)
 
+add_subdirectory(221.maximal-square)
+
