@@ -56,3 +56,4 @@ add_subdirectory(221.maximal-square)
 
 add_subdirectory(222.count-complete-tree-nodes)
 
+add_subdirectory(223.rectangle-area)
