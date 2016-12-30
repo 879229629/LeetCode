@@ -61,3 +61,5 @@ add_subdirectory(223.rectangle-area)
 add_subdirectory(224.basic-calculator)
 
 add_subdirectory(225.implement-stack-using-queues)
+
+add_subdirectory(226.invert-binary-tree)
