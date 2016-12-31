@@ -81,3 +81,5 @@ add_subdirectory(233.number-of-digit-one)
 add_subdirectory(234.palindrome-linked-list)
 
 add_subdirectory(235.lowest-common-ancestor-of-a-binary-search-tree)
+
+add_subdirectory(236.lowest-common-ancestor-of-a-binary-tree)
