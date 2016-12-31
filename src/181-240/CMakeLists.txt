@@ -69,3 +69,5 @@ add_subdirectory(227.basic-calculator-ii)
 add_subdirectory(228.summary-ranges)
 
 add_subdirectory(229.majority-element-ii)
+
+add_subdirectory(230.kth-smallest-element-in-a-bst)
