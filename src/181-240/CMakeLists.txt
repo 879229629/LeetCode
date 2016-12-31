@@ -71,3 +71,5 @@ add_subdirectory(228.summary-ranges)
 add_subdirectory(229.majority-element-ii)
 
 add_subdirectory(230.kth-smallest-element-in-a-bst)
+
+add_subdirectory(231.power-of-two)

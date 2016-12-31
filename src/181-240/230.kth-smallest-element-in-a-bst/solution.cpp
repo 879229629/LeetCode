@@ -20,5 +20,5 @@ int solution::kthSmallest(TreeNode *root, int k) {
         }
 
     }
-    return ;
+    return 1;
 }
