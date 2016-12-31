@@ -75,3 +75,5 @@ add_subdirectory(230.kth-smallest-element-in-a-bst)
 add_subdirectory(231.power-of-two)
 
 add_subdirectory(232.implement-queue-using-stacks)
+
+add_subdirectory(233.number-of-digit-one)
