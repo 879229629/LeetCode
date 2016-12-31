@@ -65,3 +65,5 @@ add_subdirectory(225.implement-stack-using-queues)
 add_subdirectory(226.invert-binary-tree)
 
 add_subdirectory(227.basic-calculator-ii)
+
+add_subdirectory(228.summary-ranges)

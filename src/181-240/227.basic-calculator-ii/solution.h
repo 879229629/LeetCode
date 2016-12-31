@@ -18,9 +18,9 @@ public:
                 ++i;
             } else if (s[i] == '+' || s[i] == '-') {
                 sum += result * flag;
-                lastOp = s[i++];
+                lastOp = s[i];
                 result = 0;
-                flag = 1;
+                flag = s[i++] == '-' ? -1 : 1;
             } else if (s[i] == '*' || s[i] == '/') {
                 lastOp = s[i];
                 ++i;
@@ -32,7 +32,7 @@ public:
                 }
                 if (lastOp == '*') result = result * last;
                 else if (lastOp == '/') result = result / last;
-                result = last;
+                else result = last;
             }
         }
         return sum + result * flag;
