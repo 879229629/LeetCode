@@ -5,3 +5,5 @@ add_subdirectory(241.different-ways-to-add-parentheses)
 add_subdirectory(242.valid-anagram)
 
 add_subdirectory(257.binary-tree-paths)
+
+add_subdirectory(258.add-digits)
