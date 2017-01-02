@@ -3,3 +3,5 @@ cmake_minimum_required(VERSION 3.5)
 add_subdirectory(241.different-ways-to-add-parentheses)
 
 add_subdirectory(242.valid-anagram)
+
+add_subdirectory(257.binary-tree-paths)
