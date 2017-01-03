@@ -3,13 +3,10 @@
 #include <vector>
 
 bool solution::isUgly(int num) {
-    std::vector<int> nums = {5, 3, 2};
-    while (!nums.empty() && num > 1) {
-        if (num % nums.back() == 0) {
-            num = num / nums.back();
-        } else {
-            nums.pop_back();
-        }
-    }
+    if (num == 1) return true;
+    if (num == 0) return false;
+    while (num % 2 == 0) num >>= 1;
+    while (num % 3 == 0) num /= 3;
+    while (num % 5 == 0) num /= 5;
     return num == 1;
 }
