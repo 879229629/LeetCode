@@ -7,3 +7,5 @@ add_subdirectory(242.valid-anagram)
 add_subdirectory(257.binary-tree-paths)
 
 add_subdirectory(258.add-digits)
+
+add_subdirectory(260.single-number-iii)
