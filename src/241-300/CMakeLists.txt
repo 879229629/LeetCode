@@ -13,3 +13,5 @@ add_subdirectory(260.single-number-iii)
 add_subdirectory(263.ugly-number)
 
 add_subdirectory(264.ugly-number-ii)
+
+add_subdirectory(268.missing-number)
