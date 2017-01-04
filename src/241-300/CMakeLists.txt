@@ -23,3 +23,5 @@ add_subdirectory(274.h-index)
 add_subdirectory(275.h-index-ii)
 
 add_subdirectory(278.first-bad-version)
+
+add_subdirectory(279.perfect-squares)
