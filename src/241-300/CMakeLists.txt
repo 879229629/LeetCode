@@ -19,3 +19,5 @@ add_subdirectory(268.missing-number)
 add_subdirectory(273.integer-to-english-words)
 
 add_subdirectory(274.h-index)
+
+add_subdirectory(275.h-index-ii)
